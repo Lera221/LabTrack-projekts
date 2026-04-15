@@ -1,0 +1,381 @@
+:root {
+  --bg: #1e1e1e;
+  --text: #ffffff;
+  --bg: #1e1e1e;
+  --text: #ffffff;
+  --blue-main: #2e8b57;
+  --blue-dark: #1b4d3e;
+  --blue-soft: #e9f4ff;
+  --text: #26415e;
+  --muted: #7a8a9d;
+  --line: #e6ebf1;
+  --bg: #f5f6f8;
+  --danger: #ff928a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+a {
+  text-decoration: none;
+}
+
+.page {
+  width: min(1220px, calc(100vw - 32px));
+  min-height: calc(100vh - 32px);
+  margin: 16px auto;
+  background: #fff;
+  border: 1px solid #dedede;
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome-page,
+.split-page {
+  display: grid;
+  grid-template-columns: 42% 58%;
+}
+
+.left-panel {
+  min-height: 760px;
+  background: linear-gradient(180deg, #0d8df4 0%, #13b5ec 100%);
+  color: #fff;
+  position: relative;
+}
+
+.brand-content {
+  text-align: center;
+  padding-top: 90px;
+}
+
+.brand-content h1 {
+  margin: 0;
+  font-size: 58px;
+  line-height: 1.15;
+  font-weight: 300;
+}
+
+.brand-content h1 span {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.brand-line {
+  width: 120px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.35);
+  margin: 34px auto 26px;
+}
+
+.brand-content p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.lab-illustration {
+  position: absolute;
+  left: 50%;
+  bottom: 55px;
+  width: 380px;
+  height: 340px;
+  transform: translateX(-50%);
+}
+
+.blob {
+  position: absolute;
+  left: 45px;
+  bottom: 10px;
+  width: 260px;
+  height: 260px;
+  background: rgba(255, 255, 255, 0.88);
+  border-radius: 56% 44% 54% 46% / 55% 48% 52% 45%;
+}
+
+.tube,
+.scientist,
+.tube::before,
+.tube::after {
+  position: absolute;
+  display: block;
+  content: "";
+}
+
+.tube-left {
+  left: 34px;
+  bottom: 42px;
+  width: 64px;
+  height: 150px;
+  border: 12px solid #a7b8ee;
+  border-top-width: 18px;
+  border-bottom-width: 18px;
+  border-radius: 18px 18px 24px 24px;
+  background: linear-gradient(180deg, transparent 0 52%, #168df6 52%);
+}
+
+.tube-center {
+  left: 120px;
+  bottom: 28px;
+  width: 112px;
+  height: 212px;
+  border: 14px solid #a7b8ee;
+  border-top-width: 24px;
+  border-bottom-width: 18px;
+  border-radius: 36px 36px 42px 42px;
+  background: linear-gradient(180deg, transparent 0 60%, #168df6 60%);
+}
+
+.tube-center::before {
+  left: 26px;
+  top: -56px;
+  width: 34px;
+  height: 56px;
+  background: #a7b8ee;
+  border-radius: 10px 10px 0 0;
+}
+
+.scientist {
+  right: 4px;
+  bottom: 10px;
+  width: 84px;
+  height: 190px;
+  background: linear-gradient(180deg, #692d58 0 18%, #ffffff 18% 76%, #172b63 76% 100%);
+  clip-path: polygon(42% 0, 58% 0, 66% 10%, 73% 20%, 78% 76%, 100% 100%, 64% 100%, 56% 78%, 48% 100%, 14% 100%, 34% 76%, 22% 20%, 28% 10%);
+  border-radius: 10px;
+}
+
+.right-panel,
+.top-panel {
+  position: relative;
+  padding: 56px 56px 90px;
+}
+
+.intro-block {
+  margin-top: 110px;
+  max-width: 560px;
+}
+
+.content-block h2 {
+  margin: 0 0 24px;
+  font-size: 66px;
+  line-height: 1.15;
+  color: var(--blue-main);
+  font-weight: 500;
+}
+
+.content-block p {
+  font-size: 23px;
+  line-height: 1.7;
+  color: #67778a;
+  margin: 0 0 34px;
+}
+
+.button-row {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 134px;
+  height: 48px;
+  padding: 0 22px;
+  border-radius: 0;
+  font-size: 18px;
+  border: 1px solid var(--blue-main);
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--blue-main);
+  color: #fff;
+}
+
+.btn-outline {
+  background: #fff;
+  color: var(--blue-main);
+}
+
+.small {
+  min-width: 125px;
+  height: 42px;
+  border-radius: 22px;
+}
+
+.bug-btn {
+  position: absolute;
+  right: 28px;
+  bottom: 22px;
+  background: var(--danger);
+  color: #fff;
+  padding: 10px 16px;
+  font-size: 15px;
+  border-radius: 0;
+}
+
+.back-link {
+  display: inline-block;
+  color: #334458;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 64px;
+}
+
+.login-block {
+  max-width: 460px;
+  margin-top: 60px;
+}
+
+.login-block h2,
+.db-header h2 {
+  font-size: 54px;
+  margin-bottom: 16px;
+}
+
+.login-block p,
+.db-header p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.login-form {
+  margin-top: 44px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #7f8d9e;
+  font-size: 13px;
+}
+
+.login-form input {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #e4e4e4;
+  padding: 0 14px;
+  margin-bottom: 18px;
+  font-size: 15px;
+  background: #fafafa;
+}
+
+.form-btn {
+  min-width: 122px;
+  margin-top: 6px;
+}
+
+.divider {
+  height: 1px;
+  background: var(--line);
+  margin: 54px 0 24px;
+}
+
+.register-line {
+  font-size: 14px !important;
+  color: #7b8997 !important;
+}
+
+.register-line a {
+  color: var(--blue-main);
+  font-weight: 600;
+}
+
+.database-page {
+  padding: 46px 38px 90px;
+}
+
+.db-header {
+  max-width: 760px;
+}
+
+.toolbar {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.toolbar input {
+  width: 240px;
+  height: 42px;
+  border-radius: 22px;
+  border: 1px solid #e4e8ee;
+  padding: 0 14px;
+}
+
+.table-wrap {
+  margin-top: 28px;
+  border-top: 1px solid var(--line);
+  padding-top: 26px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+thead th {
+  background: #082a56;
+  color: #fff;
+  text-align: left;
+  padding: 14px 16px;
+  font-weight: 600;
+}
+
+tbody td {
+  padding: 16px;
+  border-bottom: 1px solid #edf1f5;
+  color: #47586a;
+}
+
+@media (max-width: 980px) {
+  .welcome-page,
+  .split-page {
+    grid-template-columns: 1fr;
+  }
+
+  .left-panel {
+    min-height: 540px;
+  }
+
+  .right-panel,
+  .top-panel,
+  .database-page {
+    padding: 28px 24px 80px;
+  }
+
+  .content-block h2 {
+    font-size: 42px;
+  }
+
+  .brand-content h1 {
+    font-size: 42px;
+  }
+
+  .brand-content p {
+    font-size: 18px;
+  }
+
+  .lab-illustration {
+    width: 300px;
+    height: 260px;
+  }
+
+  .blob {
+    width: 210px;
+    height: 210px;
+  }
+}

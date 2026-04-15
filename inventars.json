@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "nosaukums": "Digitālie svari",
+    "apakstips": "mērīšanas ierīce",
+    "skaits": 6,
+    "komentari": "Precizitāte līdz 0.01g"
+  },
+  {
+    "id": 2,
+    "nosaukums": "Bunsena deglis",
+    "apakstips": "sildīšanas ierīce",
+    "skaits": 10,
+    "komentari": ""
+  },
+  {
+    "id": 3,
+    "nosaukums": "Mērcilindrs 100ml",
+    "apakstips": "trauki",
+    "skaits": 20,
+    "komentari": ""
+  }
+]

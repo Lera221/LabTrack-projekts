@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "nosaukums": "Etanols 70%",
+    "apakstips": "spirti",
+    "skaits": 12,
+    "daudzums": 500,
+    "mervienibas": "ml",
+    "komentari": "Dezinfekcijai"
+  },
+  {
+    "id": 2,
+    "nosaukums": "Vara sulfāts",
+    "apakstips": "sāls",
+    "skaits": 8,
+    "daudzums": 200,
+    "mervienibas": "g",
+    "komentari": "Kristālu eksperimenti"
+  },
+  {
+    "id": 3,
+    "nosaukums": "Amonija nitrāts",
+    "apakstips": "sāls",
+    "skaits": 5,
+    "daudzums": 150,
+    "mervienibas": "g",
+    "komentari": ""
+  }
+]
